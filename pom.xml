@@ -27,7 +27,7 @@
                 <scope>import</scope>
             </dependency>
         </dependencies>
-<!-- Добавлено выше только для того, чтобы запустить проект с сервлетом -->
+
     </dependencyManagement>
 
     <dependencies>
@@ -70,7 +70,13 @@
             <artifactId>jboss-servlet-api_4.0_spec</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!-- Добавлено ниже только для того, чтобы запустить проект с сервлетом -->
+
+        <!-- Добавлено ниже только для того, чтобы использовать JDBC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.2.14.RELEASE</version>
+        </dependency>
 
     </dependencies>
 
